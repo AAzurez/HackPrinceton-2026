@@ -1,0 +1,92 @@
+﻿[
+  {
+    "id": "job_critical_serve",
+    "name": "Core API Serving",
+    "duration_hours": 24,
+    "earliest_start": 0,
+    "latest_finish": 24,
+    "priority": "critical",
+    "power_mw": 5.8,
+    "start_hour": 0
+  },
+  {
+    "id": "job_critical_db",
+    "name": "Primary DB Replication",
+    "duration_hours": 8,
+    "earliest_start": 0,
+    "latest_finish": 24,
+    "priority": "critical",
+    "power_mw": 1.2,
+    "start_hour": 16
+  },
+  {
+    "id": "job_critical_monitoring",
+    "name": "Security Monitoring",
+    "duration_hours": 24,
+    "earliest_start": 0,
+    "latest_finish": 24,
+    "priority": "critical",
+    "power_mw": 0.8,
+    "start_hour": 0
+  },
+  {
+    "id": "job_flex_train_1",
+    "name": "AI Batch Training A",
+    "duration_hours": 4,
+    "earliest_start": 15,
+    "latest_finish": 7,
+    "priority": "flexible",
+    "power_mw": 2.4,
+    "start_hour": 17
+  },
+  {
+    "id": "job_flex_train_2",
+    "name": "AI Batch Training B",
+    "duration_hours": 3,
+    "earliest_start": 14,
+    "latest_finish": 8,
+    "priority": "flexible",
+    "power_mw": 2.0,
+    "start_hour": 18
+  },
+  {
+    "id": "job_flex_backup",
+    "name": "Nightly Backup",
+    "duration_hours": 2,
+    "earliest_start": 18,
+    "latest_finish": 6,
+    "priority": "flexible",
+    "power_mw": 1.4,
+    "start_hour": 19
+  },
+  {
+    "id": "job_flex_etl",
+    "name": "Analytics ETL",
+    "duration_hours": 3,
+    "earliest_start": 12,
+    "latest_finish": 23,
+    "priority": "flexible",
+    "power_mw": 1.1,
+    "start_hour": 16
+  },
+  {
+    "id": "job_flex_render",
+    "name": "Video Render Queue",
+    "duration_hours": 5,
+    "earliest_start": 10,
+    "latest_finish": 9,
+    "priority": "flexible",
+    "power_mw": 1.6,
+    "start_hour": 17
+  },
+  {
+    "id": "job_flex_reporting",
+    "name": "Compliance Reporting",
+    "duration_hours": 2,
+    "earliest_start": 9,
+    "latest_finish": 23,
+    "priority": "flexible",
+    "power_mw": 0.9,
+    "start_hour": 17
+  }
+]

@@ -1,0 +1,11 @@
+﻿Flask>=3.0
+flask-cors>=4.0
+pandas>=2.0
+numpy>=1.24
+pydantic>=2.7
+chronos-forecasting[extras]>=1.5
+ortools>=9.10
+pytest>=8.0
+
+# Install CUDA-enabled PyTorch via conda for GPU support, e.g.
+# conda install -n gs-dc pytorch pytorch-cuda=12.4 -c pytorch -c nvidia -y

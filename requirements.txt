@@ -1,0 +1,5 @@
+# Install CUDA-enabled PyTorch separately via conda to avoid CPU/GPU conflicts.
+numpy>=1.24
+pandas>=2.0
+matplotlib>=3.7
+chronos-forecasting[extras]>=1.5
