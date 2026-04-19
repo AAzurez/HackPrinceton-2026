@@ -1,0 +1,44 @@
+{
+  "model_name": "amazon/chronos-2",
+  "context_len": 168,
+  "horizon": 24,
+  "past_covariates": [
+    "grid_demand_mw",
+    "workload_pressure_index",
+    "critical_workload_ratio",
+    "batch_workload_ratio",
+    "cooling_overhead_ratio",
+    "shiftable_load_mw",
+    "hour_of_day",
+    "day_of_week",
+    "is_weekend",
+    "is_holiday"
+  ],
+  "future_covariates": [
+    "hour_of_day",
+    "day_of_week",
+    "is_weekend",
+    "is_holiday"
+  ],
+  "scalers": {
+    "target": {
+      "mean": 13.76451810985992,
+      "std": 2.7678868476788154
+    },
+    "dc_load_mw": {
+      "mean": 13.76451810985992,
+      "std": 2.7678868476788154
+    },
+    "grid_demand_mw": {
+      "mean": 29764.357555312425,
+      "std": 5850.6079306667825
+    },
+    "shiftable_load_mw": {
+      "mean": 3.235960557669243,
+      "std": 1.2725004553303747
+    }
+  },
+  "target_column": "target",
+  "id_column": "id",
+  "timestamp_column": "timestamp"
+}
