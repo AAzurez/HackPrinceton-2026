@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Nunito+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-edge;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-void text-ink antialiased;
+    font-family: "Manrope", "Nunito Sans", "Segoe UI Variable", "Segoe UI", sans-serif;
+    background-image:
+      radial-gradient(circle at 17% 12%, rgba(200, 170, 245, 0.34), transparent 34%),
+      radial-gradient(circle at 85% 88%, rgba(246, 215, 143, 0.26), transparent 32%),
+      radial-gradient(circle at 74% 30%, rgba(230, 205, 255, 0.34), transparent 30%),
+      linear-gradient(145deg, #fff7ef 0%, #f7eef7 55%, #fdf6ea 100%);
+    letter-spacing: 0.006em;
+    overflow: hidden;
+  }
+}
+
+@layer components {
+  .panel-shell {
+    @apply overflow-hidden rounded-[2rem] border border-edge/80 bg-[linear-gradient(150deg,rgba(255,252,247,0.86),rgba(246,238,255,0.84))] shadow-panel backdrop-blur-sm;
+  }
+
+  .chip {
+    @apply inline-flex items-center gap-1.5 rounded-full border border-edge/90 bg-[rgba(255,250,244,0.9)] px-3 py-1 text-[0.67rem] font-semibold uppercase tracking-[0.16em] text-muted;
+  }
+
+  .section-label {
+    @apply font-mono text-[0.68rem] uppercase tracking-[0.22em] text-support;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-accent/45 bg-[linear-gradient(180deg,#9f89f4,#866fe2)] px-6 py-3 text-sm font-semibold tracking-[0.11em] text-white shadow-glow transition hover:brightness-105 disabled:cursor-not-allowed disabled:opacity-75;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-warn/55 bg-[linear-gradient(180deg,#f6e4aa,#efce77)] px-6 py-3 text-sm font-semibold tracking-[0.11em] text-[#4a3f58] shadow-[0_10px_26px_rgba(232,192,101,0.34)] transition hover:brightness-105 disabled:cursor-not-allowed disabled:opacity-75;
+  }
+}
